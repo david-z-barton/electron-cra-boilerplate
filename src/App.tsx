@@ -13,6 +13,7 @@ function App() {
   const [file, setFile] = React.useState("");
   const fullPath = path.join(process.cwd(), "src/index.tsx")
 
+  // testing
   React.useEffect(() => {
     readFile(fullPath, "utf-8").then(res => {
       setFile(res);
